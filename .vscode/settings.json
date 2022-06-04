@@ -1,5 +1,0 @@
-{
-  "prettier.embeddedLanguageFormatting": "auto",
-  "python.formatting.provider": "black",
-  "preview.preview.breaks": true
-}
