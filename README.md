@@ -124,6 +124,8 @@ In order to manage the workload for each sprint, I have divided the above opport
   - As a satisfied customer, I want to submit a review on Tom's site to share my experience.
   - As a reading drummer, I want to download transcriptions of new songs to learn between lessons.
 
+These were the initial user stories I had, however once I began entering them on github as issues, I realised that they were much more tailored the actual business I do, rather than what the website can offer users. As such please see the [project board](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/1) to see actual user stories and tasks carried out that can be directly related to the site features.
+
 ### Skeleton Plane
 
 #### Site Flow
