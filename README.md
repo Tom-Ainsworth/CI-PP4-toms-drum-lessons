@@ -17,7 +17,13 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
   - [Structure Plane](#structure-plane)
     - [User Stories](#user-stories)
   - [Skeleton Plane](#skeleton-plane)
+    - [Site Flow](#site-flow)
+    - [Database Schema](#database-schema)
+    - [Wireframes](#wireframes)
   - [Surface Plane](#surface-plane)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+- [Agile Development Process](#agile-development-process)
 
 ## UX Design
 
@@ -129,6 +135,7 @@ Below is a flow chart using [Lucid Charts](https://www.lucidchart.com/) of how I
 #### Database Schema
 
 Here is the initial idea for how the backend will look should all of the features be implemented. I used [Lucid Charts](https://www.lucidchart.com/) once again to create the mockup.
+
 <img src="readme-content/images/data-schema.png" alt="data schema for tom's drum lessons" width="70%"/>
 
 The Transcriptions and Lessons entities will only be writtable from an admin, so that I can maintain the quality of the material. Reviews will require a login to post, and will be subject to admin approval. They will be conntected to the user so that each user can be identified in their review.
@@ -153,12 +160,12 @@ After doing the mockups for each page I realised there is a lot to do in a short
 
 The site features a minimalistic colour scheme, allowing text ot contrast well against both the background, and images.
 
-![Colour Scheme](readme-content/images/colour-palette.png)
+<img src="readme-content/images/colour-palette.png" alt="colour palette" width="50%" />
 
 #### Typography
 
 The main font of the entire site is Nanum Gothic from [Google Fonts](https://fonts.google.com/specimen/Nanum+Gothic?query=gothic). I used sans-serif as a backup as they use the same typeface.
 
-### Agile Development Process
+## Agile Development Process
 
 I used Github's issues and projects to keep track of the progress throughout the project. The main project board can be found [here](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/1)
