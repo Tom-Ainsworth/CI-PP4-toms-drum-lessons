@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://toms-drum-lessons.herokuapp.com/",
+    "toms-drum-lessons.herokuapp.com/",
     "127.0.0.1",
 ]
 
