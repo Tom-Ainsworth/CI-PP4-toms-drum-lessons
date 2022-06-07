@@ -3,5 +3,3 @@ env.py
 .vscode
 .prettierignore
 .github
-
-runtime.txt
