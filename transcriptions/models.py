@@ -7,7 +7,7 @@ class Transcription(models.Model):
     song_name = models.CharField(max_length=30)
     artist_name = models.CharField(max_length=30)
     featured_image = CloudinaryField("image")
-    chart = CloudinaryField("file")
+    chart = CloudinaryField("Sheet Music", use_filename=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="transcriber"
