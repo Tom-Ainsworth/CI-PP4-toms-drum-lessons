@@ -10,7 +10,7 @@ class Transcription(models.Model):
     chart = CloudinaryField("Sheet Music", use_filename=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="transcriber"
+        User, on_delete=models.PROTECT, related_name="transcriber"
     )
     created_on = models.DateTimeField(auto_now_add=True)
 
