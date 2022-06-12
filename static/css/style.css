@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nanum+Gothic:wght@400;700&display=swap');
 
 body {
-  font-family: 'Inter', sans-serif;
   font-family: 'Nanum Gothic', sans-serif;
   margin: 0;
   border: 0;
@@ -24,4 +23,13 @@ body {
 
 .bg-black {
   background-color: black;
+}
+
+/* Containers ================================================================= */
+#container-home {
+  background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655058476/Whole_Room-min_hayotb.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }

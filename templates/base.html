@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="shortcut icon"
-      href="https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1654970859/favicon_krdaef.ico"
-      type="image/x-icon">
+    <link rel="icon" href="https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1654970859/favicon_krdaef.ico"
+      sizes="any">
+    <link rel="apple-touch-icon"
+      href="https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655056199/apple-touch-icon_htdnfj.png">
+    <link rel="manifest"
+      href="https://res.cloudinary.com/tom-s-drum-lessons/raw/upload/v1655056827/site_ouvkbg.webmanifest">
     <script src="https://kit.fontawesome.com/f81afa6388.js" crossorigin="anonymous"></script>
     <title>{{ title }}</title>
   </head>
@@ -39,7 +42,7 @@
     </nav>
 
 
-    <main>{% block content%} {%endblock%}</main>
+    {% block content%} {%endblock%}
 
     <footer class='container-fluid text-center bg-black text-grey pt-4'>
       <div class="row">
@@ -52,15 +55,13 @@
 
         </div>
         <div class="col-sm">
-          <h4>Contact</h4>
+          <h4 class="mb-3">Contact</h4>
 
-          <p>
+          <p class="text-center ">
             <a href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-            <br>
-            <a href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i class="fa-brands fa-youtube"></i></a>
-            <br>
+            <a class="p-4" href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i
+                class="fa-brands fa-youtube"></i></a>
             <a href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i class="fa-solid fa-envelope"></i></a>
-
           </p>
         </div>
         <div class="col-sm">
