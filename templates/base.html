@@ -22,14 +22,14 @@
 
   <body class='h100'>
     <nav class="navbar navbar-expand-lg navbar-light bg-grey">
-      <a class="navbar-brand text-white" href="{{ urls.home}}">TomsDrumLessons.com</a>
+      <a class="navbar-brand text-white" href="{% url 'home' %}">TomsDrumLessons.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-        <a class="nav-link active" href="#">About</a>
+        <a class="nav-link active" href="{% url 'about' %}">About</a>
         <a class="nav-link">Lessons</a>
         <a class="nav-link">Bookings</a>
         <a class="nav-link">Find Me</a>
@@ -40,8 +40,9 @@
       </div>
     </nav>
 
-
-    {% block content%} {%endblock%}
+    <main class="container-fluid text-center text-white py-5" id="container-{{ title.lower }}">
+      {% block content%} {%endblock%}
+    </main>
 
     <footer class='container-fluid text-center bg-black text-grey pt-4 h100'>
       <div class="row">
@@ -57,10 +58,13 @@
           <h4 class="mb-3">Contact</h4>
 
           <p class="text-center ">
-            <a href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-            <a class="p-4" href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i
-                class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/tomainsworthdrums/?hl=en"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/tomainsworthdrums/?hl=en" target="_blank"
+              aria-label="Link to Tom's Instagram page in a new tab"><i class="fa-brands fa-instagram"></i></a>
+            <a class="p-4" href="https://www.youtube.com/channel/UCBTnGEGrca1moSLHx92hFKw/featured" target="_blank"
+              aria-label="Tom's Youtube channel. Opens in a new tab"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:info@tomsdrumlessons.com?subject=General Enquiry" target="_blank"
+              aria-label="Tom's email address, opens in a new tab"><i class="
+              fa-solid fa-envelope"></i></a>
           </p>
         </div>
         <div class="col-sm">

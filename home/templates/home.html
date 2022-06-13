@@ -1,33 +1,34 @@
 {% extends 'base.html' %} {% block content%}
 
-<main class="container-fluid text-center text-white py-5" id="container-home">
-    <div class="container w-75">
-        <h1 class="mb-5">Tom's Drum Lessons</h1>
-        <h2 class="h5 mb-3">Private 1-1 Drum Lessons in South West London</h2>
-        <p class="h5 mb-3"><strong>LEARN - PLAY - PROGRESS</strong></p>
-        <p class="h4 mb-5">Drums are <br> <strong>THE MOST FUN</strong><br> instrument you can play, not that we're
-            biased or
-            anything...
-        </p>
+
+<div class="container w-75">
+    <h1 class="mb-5">Tom's Drum Lessons</h1>
+    <h2 class="h5 mb-3">Private 1-1 Drum Lessons in South West London</h2>
+    <p class="h5 mb-3"><strong>LEARN - PLAY - PROGRESS</strong></p>
+    <p class="h4 mb-5">Drums are <br> <strong>THE MOST FUN</strong><br> instrument you can play, not that we're
+        biased or
+        anything...
+    </p>
+</div>
+
+
+
+
+<div class="wrapper">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+            src="https://player.vimeo.com/video/389473070?h=79b0a922a6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            title="Tom Ainsworth - Part Time Lover Drum Cover"></iframe>
     </div>
+</div>
 
 
-
-
-    <div class="wrapper">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe
-                src="https://player.vimeo.com/video/389473070?h=79b0a922a6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                title="Tom Ainsworth - Part Time Lover Drum Cover"></iframe>
-        </div>
-    </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-</main>
 
 {% endblock %}
 
 {% block scripts %}
 {% load static%}
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
