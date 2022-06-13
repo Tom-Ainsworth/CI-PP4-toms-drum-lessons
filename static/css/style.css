@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 /*  Colours ================================================================= */
 
 .text-white {
@@ -18,7 +22,7 @@ body {
 }
 
 .bg-grey {
-  background-color: #a8a6a1;
+  background-color: #434343bd;
 }
 
 .bg-black {
@@ -28,8 +32,25 @@ body {
 /* Containers ================================================================= */
 #container-home {
   background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655058476/Whole_Room-min_hayotb.jpg');
+  background-color: rgba(2, 2, 2, 0.4);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25% 0 0 0;
+}
+
+.wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
