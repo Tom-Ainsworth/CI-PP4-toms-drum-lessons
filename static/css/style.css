@@ -40,7 +40,8 @@ a {
   background-size: cover;
 }
 
-#container-about {
+#container-about,
+#container-faqs {
   background-color: black;
 }
 
