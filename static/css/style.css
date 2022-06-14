@@ -40,6 +40,10 @@ a {
   background-size: cover;
 }
 
+#container-about {
+  background-color: black;
+}
+
 .wrapper {
   width: 75%;
   margin: 0 auto;
@@ -54,3 +58,5 @@ a {
   top: 0;
   left: 0;
 }
+
+/* images ================================================================================================= */
