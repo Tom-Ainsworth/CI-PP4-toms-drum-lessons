@@ -1,9 +1,12 @@
-from django.views.generic import TemplateView
 from home.views import PageTitleViewMixin
+from django.views import generic
+from .models import Question
 
 
-class FaqView(PageTitleViewMixin, TemplateView):
-    """FAQs page view"""
+class QuestionList(generic.ListView, PageTitleViewMixin):
+    """Displays the quesitons in a list view"""
 
-    template_name = "faqs.html"
+    model = Question
     title = "FAQs"
+    template_name = "faqs.html"
+    queryset = Question.objects.order_by("-created_on")

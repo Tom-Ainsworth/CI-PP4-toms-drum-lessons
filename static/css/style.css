@@ -60,4 +60,15 @@ a {
   left: 0;
 }
 
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 2px solid #a8a6a1;
+}
+
+.accordion > .card {
+  background-color: black;
+  border-bottom: 2px solid #a8a6a1;
+}
+
+/* Headings ================================================================================================= */
+
 /* images ================================================================================================= */
