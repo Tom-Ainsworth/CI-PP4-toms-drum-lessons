@@ -49,6 +49,7 @@ a {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  height: 90vh;
 }
 
 #container-about,
@@ -77,20 +78,23 @@ a {
   border-top: 3px solid #a8a6a1;
 }
 
-.nav-link:hover {
-  color: black;
-  font-size: 130%;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 5px;
+.navbar {
+  padding: 0px 16px;
 }
 
-.nav-link:active {
+.nav-link {
+  padding: 20px;
+  margin: 0px;
+}
+
+.nav-link:hover {
   color: black;
-  font-size: 130%;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 5px;
+  background-color: #d4d4d4c8;
+}
+
+.active {
+  color: black;
+  background-color: #d4d4d4c8;
 }
 
 .link-inline {
