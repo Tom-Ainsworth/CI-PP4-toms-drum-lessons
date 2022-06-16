@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Question
 
 
-class QuestionList(generic.ListView, PageTitleViewMixin):
+class QuestionList(PageTitleViewMixin, generic.ListView):
     """Displays the quesitons in a list view"""
 
     model = Question
