@@ -1,6 +1,6 @@
 # Agile Methodology
 
-[Back to main Readme document](readme.md)
+[Back to main Readme document](README.md)
 
 - [Overview](#overview)
   - [Sprint 1 notes:](#sprint-1)
