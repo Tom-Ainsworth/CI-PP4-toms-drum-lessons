@@ -41,6 +41,16 @@ a {
   background-size: cover;
 }
 
+#container-bookings {
+  background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655395476/bookings-image-1_ofrjtv.jpg');
+  background-color: rgba(2, 2, 2, 0.4);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 #container-about,
 #container-faqs {
   background-color: black;
@@ -65,4 +75,24 @@ a {
   background-color: black;
   border-bottom: 3px solid #a8a6a1;
   border-top: 3px solid #a8a6a1;
+}
+
+.nav-link:hover {
+  color: black;
+  font-size: 130%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.nav-link:active {
+  color: black;
+  font-size: 130%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.link-inline {
+  text-decoration: underline;
 }

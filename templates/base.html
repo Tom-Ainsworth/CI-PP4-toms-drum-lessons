@@ -21,7 +21,7 @@
   </head>
 
   <body class='h100'>
-    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+    <nav class="navbar navbar-expand-lg bg-grey">
       <a class="navbar-brand text-white" href="{% url 'home' %}">TomsDrumLessons.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +29,9 @@
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-        <a class="nav-link active" href="{% url 'about' %}">About</a>
+        <a class="nav-link" href="{% url 'about' %}">About</a>
         <a class="nav-link">Lessons</a>
-        <a class="nav-link">Bookings</a>
+        <a class="nav-link" href="{% url 'bookings' %}">Bookings</a>
         <a class="nav-link">Find Me</a>
         <a class="nav-link">Transcriptions</a>
         <a class="nav-link" href="{% url 'faqs' %}">FAQs</a>
