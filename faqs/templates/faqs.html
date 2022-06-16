@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Frequently Asked Questions</h1>
+<h1 class="mb-5">Frequently Asked Questions</h1>
 
 <div class="accordion" id="accordionExample">
     {% for question in question_list %}
     <div class="card text-reset text-left">
         <div class="card-header" id="heading{{ question.id }}">
             <h2 class="mb-0">
-                <button class="btn btn-block text-left text-white" type="button" data-toggle="collapse"
+                <button class="btn btn-block btn-lg text-left text-white btn-faq" type="button" data-toggle="collapse"
                     data-target="#collapse{{ question.id }}" aria-expanded="true"
                     aria-controls="collapse{{ question.id }}">
-                    {{ question.title}}
+                    - {{ question.title}}
                 </button>
             </h2>
         </div>

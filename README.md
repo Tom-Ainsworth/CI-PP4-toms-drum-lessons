@@ -24,6 +24,8 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
 - [Agile Development Process](#agile-development-process)
+- [Features](#features)
+  - [Site Navigation](#site-navigation)
 
 ## UX Design
 
@@ -170,4 +172,13 @@ The main font of the entire site is Nanum Gothic from [Google Fonts](https://fon
 
 ## Agile Development Process
 
-I used Github's issues and projects to keep track of the progress throughout the project. The main project board can be found [here](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/1)
+I used Github's issues and projects to keep track of the progress throughout the project. The main project board can be found [here](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/5)
+Notes on individual sprints, including tasks completed and problems encountered can be found in a the [AGILE.md](agile.md) file.
+
+## **Features**
+
+### **Site Navigation**
+
+#### **Navbar**
+
+##### **_Logo:_**

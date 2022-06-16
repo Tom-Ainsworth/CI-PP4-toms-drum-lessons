@@ -30,6 +30,7 @@ a {
 }
 
 /* Containers ================================================================= */
+
 #container-home {
   background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655058476/Whole_Room-min_hayotb.jpg');
   background-color: rgba(2, 2, 2, 0.4);
@@ -60,15 +61,8 @@ a {
   left: 0;
 }
 
-.accordion > .card:not(:last-of-type) {
-  border-bottom: 2px solid #a8a6a1;
-}
-
 .accordion > .card {
   background-color: black;
-  border-bottom: 2px solid #a8a6a1;
+  border-bottom: 3px solid #a8a6a1;
+  border-top: 3px solid #a8a6a1;
 }
-
-/* Headings ================================================================================================= */
-
-/* images ================================================================================================= */
