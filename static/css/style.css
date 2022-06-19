@@ -54,7 +54,8 @@ a {
 
 #container-about,
 #container-faqs,
-#container-authentication {
+#container-authentication,
+#container-reviews {
   background-color: black;
 }
 
@@ -84,7 +85,7 @@ a {
 }
 
 .nav-link {
-  padding: 20px 16px;
+  padding: 20px 10px;
   height: 100%;
 }
 

@@ -41,4 +41,6 @@ For the actual work done here, I was quite happy with the progress. I added most
 
 The primary objective for this sprint is to get the Calendly booking page done. This is a must have for the site, and as I am feeling more confident with adding the Django views, I am happy to leave those for a later date. I anticipate that the booking page will take a little longer to implement properly. The user stories for this sprint are: Create the bookings page, transcriptions page and findme/location page. If I have time I will make a start on the login system, and how that will look for authorised users.
 
+It turned out that integrating Calendly was a simple copy and paste of the Calendly code snippet, meaning I had a lot more time than expected to work on everything else. After having a meeting with my mentor, Spencer, I decided it would be a better idea to add the authentication in prior to doing the above views, that way I can focus on the reviews page and adding CRUD functionality fully.
+
 #### Sprint Reflection
