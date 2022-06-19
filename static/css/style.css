@@ -78,13 +78,13 @@ a {
   border-top: 3px solid #a8a6a1;
 }
 
-.navbar {
+.navbar-expand-lg {
   padding: 0px 16px;
 }
 
 .nav-link {
-  padding: 20px;
-  margin: 0px;
+  padding: 20px 16px;
+  height: 100%;
 }
 
 .nav-link:hover {
@@ -99,4 +99,11 @@ a {
 
 .link-inline {
   text-decoration: underline;
+}
+
+/*  Media Queries ================================================================================================= */
+@media (max-width: 991px) {
+  .navbar-expand-lg {
+    padding: 16px;
+  }
 }
