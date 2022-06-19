@@ -1,16 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Bookings</h1>
-<p class="h2">Below is a link with Tom's availability. If any of the time slots work for you, feel free to choose an
-    available time
-    and Tom will get back to you to discuss further.</p>
-<p>Please see the <a class="link-inline" href="faq.html">Frequently Asked Questions</a> for more details.</p>
+<div class="container w-75">
+    <h1 class="mb-5">Bookings</h1>
+    <p>Below is a link with Tom's availability. If any of the time slots work for you, feel free to choose an
+        available time and Tom will get back to you to discuss further.</p>
+    <p>Please see the <a class="link-inline" href="{% url 'faqs' %}">Frequently Asked Questions</a>
+        for
+        more
+        details.</p>
 
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tomainsworth94'});return false;">Book a
-    Lesson</a>
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tomainsworth94'});return false;">Book a
+        Lesson</a>
+</div>
+
 <!-- Calendly link widget end -->
 {% endblock content %}
