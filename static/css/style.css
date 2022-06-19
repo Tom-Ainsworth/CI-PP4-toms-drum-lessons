@@ -53,7 +53,8 @@ a {
 }
 
 #container-about,
-#container-faqs {
+#container-faqs,
+#container-authentication {
   background-color: black;
 }
 

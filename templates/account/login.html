@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Login" %}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-8 mt-3 offset-md-2">
+    <h3>{% trans "Sign In" %}</h3>
+
+    <p>{% blocktrans %}Welcome back to Tom's Drum Lessons! To leave a review, please sign in here.
+      <br>
+      If you haven't created an account yet, head over to <a class="link-inline" href="{{ signup_url }}">sign up</a> to
+      get
+      started.{% endblocktrans %}
+    </p>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 mt-3 offset-md-2">
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+
+      <button class="btn btn-primary" type="submit">{% trans "Login" %}</button>
+    </form>
+  </div>
+</div>
+
+</div>
+</div>
+{% endblock %}

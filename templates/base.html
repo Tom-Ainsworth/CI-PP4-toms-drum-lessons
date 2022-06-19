@@ -18,7 +18,8 @@
         <link rel="manifest"
             href="https://res.cloudinary.com/tom-s-drum-lessons/raw/upload/v1655056827/site_ouvkbg.webmanifest">
         <script src="https://kit.fontawesome.com/f81afa6388.js" crossorigin="anonymous"></script>
-        <title>{{ title }} - TomsDrumLessons.com</title>
+        <title>{% if title %}{{ title }} {% else %} {% block head_title %}{% endblock %} {% endif %} -
+            TomsDrumLessons.com</title>
     </head>
 
     <body class='h100'>
@@ -38,13 +39,20 @@
                 <a class="nav-link {% if url_name == 'find-me' %}active{% endif %}" href="#">Find Me</a>
                 <a class="nav-link {% if url_name == 'transcriptions' %}active{% endif %}">Transcriptions</a>
                 <a class="nav-link {% if url_name == 'faqs' %}active{% endif %}" href="{% url 'faqs' %}">FAQs</a>
-                <a class="nav-link">Login</a>
-                <a href="#" class="nav-link">Sign Up</a>
+                {% if user.is_authenticated %}
+                <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+
+                {% else %}
+                <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+                {% endif %}
+
             </div>
             {% endwith %}
         </nav>
 
-        <main class="container-fluid text-center text-white py-5" id="container-{{ title.lower }}">
+        <main class="container-fluid text-center text-white py-5"
+            id="container-{% if title %}{{ title.lower }}{% else %}authentication{% endif %}">
             {% block content%} {%endblock%}
         </main>
 
