@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.views import generic, View
 from home.views import PageTitleViewMixin
 from .forms import ReviewForm
@@ -39,10 +39,4 @@ class CreateReview(PageTitleViewMixin, View):
         else:
             review_form = ReviewForm()
 
-        return render(
-            request,
-            "reviews.html",
-            {
-                "reviewed": True,
-            },
-        )
+        return redirect("reviews")
