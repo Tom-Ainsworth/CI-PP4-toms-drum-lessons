@@ -3,6 +3,7 @@ from django.views import generic, View
 from home.views import PageTitleViewMixin
 from .forms import ReviewForm
 from .models import Review
+from django.contrib import messages
 
 
 class ReviewList(PageTitleViewMixin, generic.ListView):
@@ -38,5 +39,7 @@ class CreateReview(PageTitleViewMixin, View):
             review_form.save()
         else:
             review_form = ReviewForm()
-
-        return redirect("reviews")
+        messages.success(
+            request, "Your review has been created and is pending approval"
+        )
+        return redirect("/")

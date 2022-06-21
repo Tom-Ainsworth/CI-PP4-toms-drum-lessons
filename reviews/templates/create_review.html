@@ -3,11 +3,6 @@
 
 {% block content %}
 <div class="container w-50">
-    {% if reviewed %}
-    <div class="alert alert-success">
-        Your review is awaiting approval
-    </div>
-    {% else %}
 
     {% if user.is_authenticated %}
     <h1>Write a Review as {{ user.username }}</h1>
@@ -16,7 +11,8 @@
         {% csrf_token %}
         <button class="btn btn-success">Submit Review</button>
     </form>
-    {% endif %}
+    {% else %}
+    <p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
     {% endif %}
 </div>
 {% endblock content %}
