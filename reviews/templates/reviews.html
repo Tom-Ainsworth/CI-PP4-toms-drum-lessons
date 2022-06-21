@@ -3,17 +3,26 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+
 <h1>Reviews</h1>
 <div class="row">
     <div class="col-12 mt-3 left">
         <div class="row">
             {% for review in review_list %}
+
             <div class="col-md-4">
                 <div class="card mb-4 bg-grey">
                     <div class="card-body">
                         <h2 class="card-title">{{ review.title }}</h2>
                         <p class="card-text">{{ review.body | safe }}</p>
                         <p class="author">Written by: {{ review.author }}</p>
+                        {% if review.author_id == user.id %}
+
+                        <a href="#" class="btn btn-secondary btn-lg mt-4">Update your Review</a>
+                        <a href="delete_review/{{review.id}}" class="btn btn-danger btn-lg mt-3">Delete your
+                            Review</a>
+
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -24,6 +33,7 @@
             {% endfor %}
         </div>
     </div>
+
     {% if is_paginated %}
     <div class="container text-center">
         <nav aria-lave="Page navigation">
@@ -41,11 +51,21 @@
             </ul>
         </nav>
     </div>
-
     {% endif %}
 </div>
 
 {% if user.is_authenticated %}
+{% if review_list.approved == True %}
+<div class="col-md-4">
+    <div class="card mb-4 bg-grey">
+        <div class="card-body">
+            <h2 class="card-title">{{ review.title }}</h2>
+            <p class="card-text">{{ review.body | safe }}</p>
+            <p class="author">Written by: {{ review.author }}</p>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 <a href="create_review" class="btn btn-primary btn-lg mt-5">Write a Review</a>
 
