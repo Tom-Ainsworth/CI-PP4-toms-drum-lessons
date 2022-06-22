@@ -18,10 +18,10 @@
                         <p class="author">Written by: {{ review.author }}</p>
                         {% if review.author_id == user.id %}
 
-                        <a href="#" class="btn btn-secondary btn-lg mt-4">Update your Review</a>
+                        <a href="{{review.pk}}/update" class="btn btn-secondary btn-lg mt-4">Update your
+                            Review</a>
                         <a href="delete_review/{{review.id}}" class="btn btn-danger btn-lg mt-3">Delete your
                             Review</a>
-
                         {% endif %}
                     </div>
                 </div>
@@ -30,6 +30,7 @@
         </div>
         <div class="row">
             {% endif %}
+
             {% endfor %}
         </div>
     </div>
@@ -73,4 +74,11 @@
 <p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
 {% endif %}
 
+
 {% endblock content %}
+
+{% block scripts %}
+{% load static %}
+<script src="{% static 'js/script.js' %}">
+</script>
+{% endblock %}

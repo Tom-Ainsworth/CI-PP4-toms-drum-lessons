@@ -67,63 +67,48 @@
                     </div>
                 </div>
             </div>
-            <script>
-                setTimeout(function () {
-                    let messages = document.getElementById('msg');
-                    let alert = new bootstrap.Alert(messages);
-                    alert.close();
-                }, 3000);
-
-            </script>
             {% endif %}
-            {% block content%} {%endblock%}
+            {% block content %}
+            {% endblock %}
         </main>
-
-        <footer class='container-fluid text-center bg-black text-grey pt-4 h100'>
+        <footer class='container-fluid text-center text-grey bg-black pt-4 h100'>
             <div class="row">
                 <div class="col-sm ">
-                    <h4>Opening Hours</h4>
-                    <p>Tuesday - Thursday
-                        <br>
-                        4pm - 10pm
-                    </p>
-
+                    <h4> Opening Hours </h4>
+                    <p> Tuesday - Thursday <br>
+                        4 pm - 10 pm </p>
                 </div>
                 <div class="col-sm">
-                    <h4 class="mb-3">Contact</h4>
-
+                    <h4 class="mb-3"> Contact </h4>
                     <p class="text-center ">
-                        <a href="https://www.instagram.com/tomainsworthdrums/?hl=en" target="_blank"
-                            aria-label="Link to Tom's Instagram page in a new tab"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a class="p-4" href="https://www.youtube.com/channel/UCBTnGEGrca1moSLHx92hFKw/featured"
-                            target="_blank" aria-label="Tom's Youtube channel. Opens in a new tab"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <a href="mailto:info@tomsdrumlessons.com?subject=General Enquiry" target="_blank"
-                            aria-label="Tom's email address, opens in a new tab"><i class="
-              fa-solid fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/tomainsworthdrums/?hl=en" target="_blank" aria -
+                            label="Link to Tom's Instagram page in a new tab">
+                            <i class="fa-brands fa-instagram">
+                            </i> </a> <a class="p-4"
+                            href="https://www.youtube.com/channel/UCBTnGEGrca1moSLHx92hFKw/featured" target="_blank"
+                            aria - label="Tom's Youtube channel. Opens in a new tab">
+                            <i class="fa-brands fa-youtube">
+                            </i> </a> <a href="mailto:info@tomsdrumlessons.com?subject=General Enquiry" target="_blank"
+                            aria - label="Tom's email address, opens in a new tab">
+                            <i class="
+                fa - solid fa - envelope "></i></a>
                     </p>
                 </div>
                 <div class="col-sm">
-                    <h4>Studio Address:</h4>
+                    <h4> Studio Address: </h4>
                     <p>
-                        17 Lydden Road
-                        <br>
-                        Earlsfield
-                        <br>
-                        SW18 4LT
-                    </p>
-
+                        17 Lydden Road <br>
+                        Earlsfield <br>
+                        SW18 4 LT </p>
                 </div>
             </div>
         </footer>
-
-
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+
         </script>
         {% block scripts %}
         {% endblock scripts %}

@@ -4,6 +4,7 @@ from home.views import PageTitleViewMixin
 from .forms import ReviewForm
 from .models import Review
 from django.contrib import messages
+from django.urls import reverse_lazy
 
 
 class ReviewList(PageTitleViewMixin, generic.ListView):
@@ -28,7 +29,7 @@ class CreateReview(View):
             {"review_form": ReviewForm()},
         )
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         """post the new review to the database"""
 
         review_form = ReviewForm(request.POST)
@@ -41,35 +42,23 @@ class CreateReview(View):
         messages.success(
             request, "Your review has been created and is pending approval"
         )
-        return redirect("/")
+        return redirect("reviews")
 
-    def delete_review(request, review_id):
-        review = get_object_or_404(Review, id=review_id)
+    def delete_review(request, id):
+        review = get_object_or_404(Review, id=id)
         review.delete()
+        messages.success(request, "Your review has been deleted.")
+
         return redirect("reviews")
 
 
-class UpdateReview(View):
+class UpdateReview(PageTitleViewMixin, generic.UpdateView):
     """Class View to add a new review"""
 
-    def get(self, request, *args, **kwargs):
-        return render(
-            request,
-            "create_review.html",
-            {"review_form": ReviewForm()},
-        )
+    title = "Update Review"
+    template_name = "update_review.html"
+    model = Review
 
-    def post(self, request, *args, **kwargs):
-        """post the new review to the database"""
-
-        review_form = ReviewForm(request.POST)
-
-        if review_form.is_valid():
-            review_form.instance.author_id = request.user.id
-            review_form.save()
-        else:
-            review_form = ReviewForm()
-        messages.success(
-            request, "Your review has been created and is pending approval"
-        )
-        return redirect("/")
+    fields = ["title", "body"]
+    template_name_suffix = "_update_form"
+    success_url = reverse_lazy("reviews")
