@@ -5,6 +5,7 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
+  background-color: black;
 }
 
 a {
@@ -23,10 +24,6 @@ a {
 
 .bg-grey {
   background-color: #434343bd;
-}
-
-.bg-black {
-  background-color: black;
 }
 
 /* Containers ================================================================= */
@@ -50,13 +47,6 @@ a {
   background-position: center;
   background-size: cover;
   height: 80vh;
-}
-
-#container-about,
-#container-faqs,
-#container-authentication,
-#container-reviews {
-  background-color: black;
 }
 
 .wrapper {
@@ -101,6 +91,15 @@ a {
 
 .link-inline {
   text-decoration: underline;
+}
+
+label {
+  display: block;
+}
+
+form p input,
+form p textarea {
+  width: 100%;
 }
 
 /*  Media Queries ================================================================================================= */

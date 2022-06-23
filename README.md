@@ -4,7 +4,7 @@
 
 Although I am in the process of changing careers, I currently teach 1-1 drum lessons in person. One of the primary reasons I became interested in web development was to build my own website to advertise my business, and host lessons online. This website is aimed at people of all ages who are interested in taking drum lessons with me at my studio, and want to find out a bit more about me and what I can offer, before booking a lesson.
 
-![Multi Screen Image]()
+![Multi Screen Image](#)
 
 [Live Site](https://toms-drum-lessons.herokuapp.com/)
 

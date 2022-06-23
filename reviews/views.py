@@ -19,14 +19,18 @@ class ReviewList(PageTitleViewMixin, generic.ListView):
     paginate_by = 3
 
 
-class CreateReview(View):
+class CreateReview(PageTitleViewMixin, View):
     """Class View to add a new review"""
 
+    title = "Create Review"
+    template_name = "create_review.html"
+
     def get(self, request, *args, **kwargs):
+        context = {"review_form": ReviewForm(), "title": "Create Review"}
         return render(
             request,
             "create_review.html",
-            {"review_form": ReviewForm()},
+            context,
         )
 
     def post(self, request):
@@ -55,9 +59,9 @@ class CreateReview(View):
 class UpdateReview(PageTitleViewMixin, generic.UpdateView):
     """Class View to add a new review"""
 
-    title = "Update Review"
-    template_name = "update_review.html"
     model = Review
+    template_name = "update_review.html"
+    title = "Update Review"
 
     fields = ["title", "body"]
     template_name_suffix = "_update_form"

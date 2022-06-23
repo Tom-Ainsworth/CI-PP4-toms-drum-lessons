@@ -29,7 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 ALLOWED_HOSTS = [
     "toms-drum-lessons.herokuapp.com",
@@ -53,6 +55,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "django_summernote",
+    "widget_tweaks",
     "crispy_forms",
     "about",
     "bookings",

@@ -33,11 +33,15 @@
             {% with request.resolver_match.url_name as url_name %}
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
-                <a class="nav-link{% if url_name == 'lessons' %}active{% endif %}" href="#">Lessons</a>
+                {% comment %} <a class="nav-link{% if url_name == 'lessons' %}active{% endif %}" href="#">Lessons</a>
+                {% endcomment %}
                 <a class="nav-link {% if url_name == 'bookings' %}active{% endif %}"
                     href="{% url 'bookings' %}">Bookings</a>
-                <a class="nav-link {% if url_name == 'find-me' %}active{% endif %}" href="#">Find Me</a>
-                <a class="nav-link {% if url_name == 'transcriptions' %}active{% endif %}">Transcriptions</a>
+                {% comment %} <a class="nav-link {% if url_name == 'find-me' %}active{% endif %}" href="#">Find Me</a>
+                {% endcomment %}
+                {% comment %} <a
+                    class="nav-link {% if url_name == 'transcriptions' %}active{% endif %}">Transcriptions</a>
+                {% endcomment %}
                 <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}"
                     href="{% url 'reviews' %}">Reviews</a>
                 <a class="nav-link {% if url_name == 'faqs' %}active{% endif %}" href="{% url 'faqs' %}">FAQs</a>

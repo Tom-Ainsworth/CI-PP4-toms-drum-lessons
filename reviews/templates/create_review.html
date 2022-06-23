@@ -5,11 +5,13 @@
 <div class="container w-50">
 
     {% if user.is_authenticated %}
-    <h1>Write a Review as {{ user.username }}</h1>
+    <h1>Write a Review as
+        <br>
+        {{ user.username }}</h1>
     <form method="post">
-        {{ review_form | crispy }}
         {% csrf_token %}
-        <button class="btn btn-success">Submit Review</button>
+        {{ review_form | crispy }}
+        <button class="btn btn-success btn-lg">Submit Review</button>
     </form>
     {% else %}
     <p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
