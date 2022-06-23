@@ -5,9 +5,10 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<h1 class="mb-3">Sign Up</h1>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">Log In</a>.{% endblocktrans %}</p>
+<p class="h3 mb-5">Already have an account? Then please <a href="{{ login_url }}" class="link-inline">Log
+    In</a>.</p>
 <div class="container w-50">
   <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
 
@@ -28,7 +29,7 @@
     {% endif %}
 
     <div class="text-center p-3">
-      <button type="submit" class="btn btn-primary btn-lg">{% trans "Sign Up" %} &raquo;</button>
+      <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
     </div>
 
   </form>

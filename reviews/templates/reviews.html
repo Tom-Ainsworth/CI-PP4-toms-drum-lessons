@@ -58,18 +58,10 @@
     {% endif %}
 </div>
 
-{% if user.is_authenticated %}
-{% if review_list.approved == True %}
-<div class="col-md-4">
-    <div class="card mb-4 bg-grey">
-        <div class="card-body">
-            <h2 class="card-title">{{ review.title }}</h2>
-            <p class="card-text">{{ review.body | safe }}</p>
-            <p class="author">Written by: {{ review.author }}</p>
-        </div>
-    </div>
-</div>
-{% endif %}
+{% if user.is_authenticated and review.author_id == user.id %}
+
+<p>You already have a review</p>
+{% elif  user.is_authenticated and review.author_id != user.id %}
 
 <a href="create_review" class="btn btn-primary btn-lg mt-5">Write a Review</a>
 
