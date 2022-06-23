@@ -48,13 +48,6 @@ class CreateReview(PageTitleViewMixin, View):
         )
         return redirect("reviews")
 
-    def delete_review(request, id):
-        review = get_object_or_404(Review, id=id)
-        review.delete()
-        messages.success(request, "Your review has been deleted.")
-
-        return redirect("reviews")
-
 
 class UpdateReview(PageTitleViewMixin, generic.UpdateView):
     """Class View to update an existing review"""
