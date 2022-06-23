@@ -58,22 +58,16 @@
     {% endif %}
 </div>
 
-{% if user.is_authenticated and review.author_id == user.id %}
-
-<p>You already have a review</p>
-{% elif  user.is_authenticated and review.author_id != user.id %}
-
+{% if user.is_authenticated %}
 <a href="create_review" class="btn btn-primary btn-lg mt-5">Write a Review</a>
 
 {% else %}
 <p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
 {% endif %}
 
-
 {% endblock content %}
 
 {% block scripts %}
 {% load static %}
-<script src="{% static 'js/script.js' %}">
-</script>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
