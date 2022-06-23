@@ -64,5 +64,4 @@ class UpdateReview(PageTitleViewMixin, generic.UpdateView):
     title = "Update Review"
 
     fields = ["title", "body"]
-    template_name_suffix = "_update_form"
     success_url = reverse_lazy("reviews")

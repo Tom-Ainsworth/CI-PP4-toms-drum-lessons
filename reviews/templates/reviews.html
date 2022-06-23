@@ -10,19 +10,22 @@
         <div class="row">
             {% for review in review_list %}
 
-            <div class="col-md-4">
-                <div class="card mb-4 bg-grey">
+            <div class="col-md-4 mb-4">
+                <div class="card mb-4 h-100 bg-grey">
                     <div class="card-body">
                         <h2 class="card-title">{{ review.title }}</h2>
                         <p class="card-text">{{ review.body | safe }}</p>
                         <p class="author">Written by: {{ review.author }}</p>
-                        {% if review.author_id == user.id %}
 
-                        <a href="{{review.pk}}/update" class="btn btn-secondary btn-lg mt-4">Update your
-                            Review</a>
-                        <a href="delete_review/{{review.id}}" class="btn btn-danger btn-lg mt-3">Delete your
-                            Review</a>
+                        {% if review.author_id == user.id %}
+                        <div class="button-box col-lg-12">
+                            <a href="{{review.pk}}/update" class="btn btn-secondary btn-lg mt-4">Update your
+                                Review</a>
+                            <a href="delete_review/{{review.id}}" class="btn btn-danger btn-lg mt-4">Delete your
+                                Review</a>
+                        </div>
                         {% endif %}
+
                     </div>
                 </div>
             </div>
