@@ -26,7 +26,23 @@ a {
   background-color: #434343bd;
 }
 
-/* Containers ================================================================= */
+/* Navbar ================================================================================================= */
+
+.navbar-expand-lg {
+  padding: 0px 16px;
+}
+
+.nav-link {
+  padding: 20px 10px;
+  height: 100%;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #d4d4d4c8;
+}
+
+/* Containers ================================================================================================= */
 
 #container-home {
   background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655058476/Whole_Room-min_hayotb.jpg');
@@ -64,24 +80,12 @@ a {
   left: 0;
 }
 
+/* FAQS ======================================================================================================== */
+
 .accordion > .card {
   background-color: black;
   border-bottom: 3px solid #a8a6a1;
   border-top: 3px solid #a8a6a1;
-}
-
-.navbar-expand-lg {
-  padding: 0px 16px;
-}
-
-.nav-link {
-  padding: 20px 10px;
-  height: 100%;
-}
-
-.nav-link:hover {
-  color: black;
-  background-color: #d4d4d4c8;
 }
 
 .active {
@@ -93,16 +97,8 @@ a {
   text-decoration: underline;
 }
 
-label {
-  display: block;
-}
-
-form p input,
-form p textarea {
-  width: 100%;
-}
-
 /*  Media Queries ================================================================================================= */
+
 @media (max-width: 991px) {
   .navbar-expand-lg {
     padding: 16px;

@@ -57,11 +57,20 @@ class CreateReview(PageTitleViewMixin, View):
 
 
 class UpdateReview(PageTitleViewMixin, generic.UpdateView):
-    """Class View to add a new review"""
+    """Class View to update an existing review"""
 
     model = Review
     template_name = "update_review.html"
     title = "Update Review"
 
     fields = ["title", "body"]
+    success_url = reverse_lazy("reviews")
+
+
+class DeleteReview(PageTitleViewMixin, generic.DeleteView):
+    """Class view to delete a review"""
+
+    model = Review
+    template_name = "delete_review.html"
+    title = "Delete Review"
     success_url = reverse_lazy("reviews")
