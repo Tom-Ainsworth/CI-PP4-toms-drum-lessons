@@ -26,6 +26,14 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
 - [Agile Development Process](#agile-development-process)
 - [Features](#features)
   - [Site Navigation](#site-navigation)
+    - [Logged Out](#logged-out)
+    - [Logged In](#logged-in)
+    - [Mobile Navigation](#mobile-navigation)
+  - [Home Page](#home-page)
+  - [About Page](#about-page)
+  - [Bookings Page](#bookings-page)
+  - [Reviews Page Logged Out](#reviews-page-logged-out)
+  - [Reviews Page Logged In](#reviews-page-logged-in)
 
 ## UX Design
 
@@ -142,7 +150,7 @@ Here is the initial idea for how the backend will look should all of the feature
 
 <img src="readme-content/images/data-schema.png" alt="data schema for tom's drum lessons" width="70%"/>
 
-The Transcriptions and Lessons entities will only be writtable from an admin, so that I can maintain the quality of the material. Reviews will require a login to post, and will be subject to admin approval. They will be conntected to the user so that each user can be identified in their review.
+The Transcriptions and Lessons entities will only be writtable from an admin, so that I can maintain the quality of the material. Reviews will require a login to post, and will be subject to admin approval. They will be connected to the user so that each user can be identified in their review.
 
 #### Wireframes
 
@@ -177,8 +185,52 @@ Notes on individual sprints, including tasks completed and problems encountered 
 
 ## **Features**
 
-### **Site Navigation**
+### **Navbar**
 
-#### **Navbar**
+#### Logged Out
 
-##### **_Logo:_**
+![Navbar Logged Out](readme-content/images/navbar-logged-out.png)
+
+When the user is logged out, both the Login and Sign Up buttons appear, linked to the relevant pages
+
+#### Logged In
+
+![Navbar Logged In](readme-content/images/navbar-logged-in.png)
+
+When the user is logged in, a Logout button appears, allowing them to log out
+
+#### Mobile Navigation
+
+![Navbar Mobile](readme-content/images/navbar-mobile.png)
+
+The authentication functionality is the same as above, however on smaller screens a burger menu appears, which drops down to reveal the navbar links.
+
+### **Home Page**
+
+![Home Page](readme-content/images/homepage.png)
+
+The home/landing page of the site features a Title with subheading outlining exactly what the site is. There is also an embedded video of myself playing drums, so users can see my abilities. The background image is the studio where the lessons take place, which can also be seen throughout the site, and in the video.
+
+### **About Page**
+
+![About Page](readme-content/images/aboutpage.png)
+
+The about sections features some more images of myself, from both my drum kit and where the students sit to give users an idea of what to expect. The text here is about my journey on the drums and what I currently do. On smaller screens the page shrinks to a single column to maintain the text and image size.
+
+### **Bookings Page**
+
+![Bookings Page](readme-content/images/bookingpage.png)
+
+The bookings page is very simple so not to distract from it's purpose. There is some text explaining how to book a lesson, followed by a button connected to my Calendly calendar for users to book a lesson. Should users want to know more, I added a link to the FAQs section (see below).
+
+### **Reviews Page Logged Out**
+
+![Reviews Page Logged Out](readme-content/images/reviewspageout.png)
+
+When logged out, users can view all reviews on the page, but are unable to do any further actions. The reviews are paginated to display 3 reviews per page, with forward and backward buttons when necessary. On smaller screens, reviews are displayed in a single column to maintain the text size.
+
+### **Reviews Page Logged In**
+
+![Reviews Page Logged In](readme-content/images/reviewspagein.png)
+
+When authenticated, users are able to create a new review via the 'write a review' button. Should the already have a review, they can update and delete that review via the buttons that appear on the corresponding cards.

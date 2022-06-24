@@ -6,6 +6,7 @@
   - [Sprint 1 notes:](#sprint-1)
   - [Sprint 2 notes:](#sprint-2)
   - [Sprint 3 notes:](#sprint-3)
+  - [Sprint 4 notes:](#sprint-4)
 
 ## Overview
 
