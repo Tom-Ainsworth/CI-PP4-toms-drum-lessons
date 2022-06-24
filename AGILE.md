@@ -37,6 +37,8 @@ For the actual work done here, I was quite happy with the progress. I added most
 
 16/06 - 21/06
 
+<img src="readme-content/agile/sprint-3.png" alt="Sprint 3 kanban board" width='1000px'>
+
 #### Sprint Planning
 
 The primary objective for this sprint is to get the Calendly booking page done. This is a must have for the site, and as I am feeling more confident with adding the Django views, I am happy to leave those for a later date. I anticipate that the booking page will take a little longer to implement properly. The user stories for this sprint are: Create the bookings page, transcriptions page and findme/location page. If I have time I will make a start on the login system, and how that will look for authorised users.
@@ -44,3 +46,13 @@ The primary objective for this sprint is to get the Calendly booking page done. 
 It turned out that integrating Calendly was a simple copy and paste of the Calendly code snippet, meaning I had a lot more time than expected to work on everything else. After having a meeting with my mentor, Spencer, I decided it would be a better idea to add the authentication in prior to doing the above views, that way I can focus on the reviews page and adding CRUD functionality fully.
 
 #### Sprint Reflection
+
+This sprint was the most research heavy of the project. It was definitely the right decision to change the scope of this sprint. The site now has full CRUD functionality in the reviews section, with users able to create a review once they have logged in. It took a while for me to add the functionality, particularly the update portion, I was struggling to pass the data from the template to the view to edit. I decided to go with Django's built in generic UpdateView, as it is purpose built for this. I wanted to make all CRUD functions use these same generic views to keep the code clean and consistent, however the CreateView still requires a get method I didn't want to break the site with it already working as I'd like. I may go back and edit the view if I have time, but it isn't essential. For the final sprint, I will aim to finish the documentation for the current features as the priority, then add any should have or could have features to improve the site.
+
+### Sprint 4
+
+24/06 - 29/06
+
+#### Sprint Planning
+
+As mentioned above, the main goal is to complete the documentation. This will also include testing, as that is an essential requirement for the project.
