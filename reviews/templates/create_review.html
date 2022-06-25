@@ -14,7 +14,8 @@
         <button class="btn btn-success btn-lg">Submit Review</button>
     </form>
     {% else %}
-    <p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
+    <p class="h2">Oops! You don't have access to this page, please <span class="link-inline"><a
+                href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
     {% endif %}
 </div>
 {% endblock content %}
