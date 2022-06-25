@@ -45,7 +45,7 @@ a {
 /* Containers ================================================================================================= */
 
 #container-home {
-  background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1655058476/Whole_Room-min_hayotb.jpg');
+  background-image: url('https://res.cloudinary.com/tom-s-drum-lessons/image/upload/v1656182109/Whole_Room-min_hayotb_yy8axb.webp');
   background-color: rgba(2, 2, 2, 0.4);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -72,12 +72,19 @@ a {
   padding-bottom: 56.25% 0 0 0;
 }
 
-.wrapper iframe {
+.wrapper iframe,
+.wrapper lite-vimeo {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+#jpegPlaceholder.text-center,
+#fallbackPlaceholder.text-center,
+#webpPlaceholder.text-center {
+  text-align: left;
 }
 
 /* FAQS ======================================================================================================== */

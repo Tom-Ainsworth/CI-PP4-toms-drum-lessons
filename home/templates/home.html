@@ -14,12 +14,13 @@
 
 
 
-<div class="wrapper">
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe
+<div class="wrapper text-left">
+    <div style="padding:56.25% 0 0 0; position:relative;">
+        <lite-vimeo videoid="389473070" videotitle="Tom Ainsworth - Part Time Love Drum Cover"></lite-vimeo>
+        {% comment %} <iframe
             src="https://player.vimeo.com/video/389473070?h=79b0a922a6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            title="Tom Ainsworth - Part Time Lover Drum Cover"></iframe>
+            title="Tom Ainsworth - Part Time Lover Drum Cover"></iframe> {% endcomment %}
     </div>
 </div>
 
@@ -29,5 +30,6 @@
 
 {% block scripts %}
 {% load static%}
-<script src="https://player.vimeo.com/api/player.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"></script>
+{% comment %} <script src="https://player.vimeo.com/api/player.js"></script> {% endcomment %}
 {% endblock %}
