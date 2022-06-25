@@ -245,7 +245,7 @@ If a logged in user manually enters a url to create, update or delete another us
 
 ![Create a Review](readme-content/images/review-create.png)
 
-A blank form page shows for users to create a new review. Both fields are required and will notify the user should either be blank. All reviews are pending admin approval so will be checked for empty or inappropriate language.
+A blank form page shows for users to create a new review. Both fields are required and will notify the user should either be blank. All reviews are pending admin approval.
 
 ### Update a review
 

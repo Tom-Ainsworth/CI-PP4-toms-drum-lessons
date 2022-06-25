@@ -25,7 +25,7 @@ class CreateReview(PageTitleViewMixin, View):
     title = "Create Review"
     template_name = "create_review.html"
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         context = {"review_form": ReviewForm(), "title": "Create Review"}
         return render(
             request,
