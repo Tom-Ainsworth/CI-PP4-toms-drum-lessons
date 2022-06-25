@@ -65,7 +65,7 @@
 - Issue - Bookings app would not load at all.
 - Cause - Django could not find the 'cloundinary bookings' app
 - Solution - [Fix Commit](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/5335cba884d78564406acd379ba420e64b5548be) Seperate the apps with a comma.
-
+  css
 - Issue - The deployed site on Heroku would not build properly as it couldn't install all dependencies
 - Cause - backports.zoneinfo had been set in the requirements.txt file which Heroku couldn't build wheels for, and was therefore not completeling the build.
 - Solution - [Fix](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/c0f9003a72c683865e5b214b964072c33f5f6f1a) Remove backports.zoneinfo library from requirements.txt as it wasn't necessary. Details on what this library does can be found [HERE](https://pypi.org/project/backports.zoneinfo/)
@@ -109,3 +109,5 @@
 - Issue -
 - Cause -
 - Solution -
+
+## Lighthouse
