@@ -234,3 +234,27 @@ When logged out, users can view all reviews on the page, but are unable to do an
 ![Reviews Page Logged In](readme-content/images/reviewspagein.png)
 
 When authenticated, users are able to create a new review via the 'write a review' button. Should the already have a review, they can update and delete that review via the buttons that appear on the corresponding cards.
+
+### **Reviews Page No Access**
+
+![Reviews Page No Access](readme-content/images/review-no-access.png)
+
+If a logged in user manually enters a url to create, update or delete another user's review, they are met with an error message asking them to log in to the correct account.
+
+### Create a review
+
+![Create a Review](readme-content/images/review-create.png)
+
+A blank form page shows for users to create a new review. Both fields are required and will notify the user should either be blank. All reviews are pending admin approval so will be checked for empty or inappropriate language.
+
+### Update a review
+
+![Update a Review](readme-content/images/review-update.png)
+
+The update view will prefill the necessary fields with existing data, and the user can edit either or both fields as they wish.
+
+### Delete a review
+
+![Delete a Review](readme-content/images/review-delete.png)
+
+This view loads an extra page for users to confirm that they want to delete their review, and an option to go back to the reviews page should they change their mind.
