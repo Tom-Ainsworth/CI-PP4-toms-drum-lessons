@@ -24,7 +24,7 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
 - [Agile Development Process](#agile-development-process)
-- [Features](#features)
+- [Current Features](#current-features)
   - [Site Navigation](#site-navigation)
     - [Logged Out](#logged-out)
     - [Logged In](#logged-in)
@@ -34,6 +34,11 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
   - [Bookings Page](#bookings-page)
   - [Reviews Page Logged Out](#reviews-page-logged-out)
   - [Reviews Page Logged In](#reviews-page-logged-in)
+  - [Create a Review](#create-a-review)
+  - [Update a Review](#update-a-review)
+  - [Delete a Review](#delete-a-review)
+  - [FAQs Page](#faqs-page)
+  - [Footer](#footer)
 
 ## UX Design
 
@@ -183,7 +188,7 @@ The main font of the entire site is Nanum Gothic from [Google Fonts](https://fon
 I used Github's issues and projects to keep track of the progress throughout the project. The main project board can be found [here](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/5)
 Notes on individual sprints, including tasks completed and problems encountered can be found in a the [AGILE.md](AGILE.md) file.
 
-## **Features**
+## **Current Features**
 
 ### **Navbar**
 
@@ -258,3 +263,28 @@ The update view will prefill the necessary fields with existing data, and the us
 ![Delete a Review](readme-content/images/review-delete.png)
 
 This view loads an extra page for users to confirm that they want to delete their review, and an option to go back to the reviews page should they change their mind.
+
+### FAQs Page
+
+![FAQs](readme-content/images/faqpage.png)
+
+The Frequently asked questions section features an accordion layout. This is read only for all users, and each question is dynamically added to the page from the Questions model, so that I can add or remove questions without touching the code.
+
+### Footer
+
+![Footer](readme-content/images/footer.png)
+
+The footer features a more subtle grey text colour than the rest of the site to differentiate it. I split it into 3 columns: Opening hours, contact links, Studio Address.
+
+## **Future Development**
+
+- User profiles section to add personal info, see reviews, book lessons
+- Online community to discuss lessons and share progress
+- SaaS business model with different access tiers for different content through monthly recurring subscriptions
+- Internal booking system rather than Calendly link
+- Payment system so users can fully book a lesson
+- Review replies so users can see that I've responded to them
+
+## Testing
+
+A full breakdown of testing can be seen in the [TESTING.md](TESTING.md) document.
