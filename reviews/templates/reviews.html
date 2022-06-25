@@ -62,7 +62,8 @@
 <a href="create_review" class="btn btn-primary btn-lg mt-5">Write a Review</a>
 
 {% else %}
-<p><span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
+<p class="h3">Please <span class="link-inline"><a href="{% url 'account_login' %}">Login</a></span> to leave a review
+</p>
 {% endif %}
 
 {% endblock content %}

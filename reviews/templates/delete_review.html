@@ -19,8 +19,8 @@
     </form>
     <a href="{% url 'reviews' %}" class="btn btn-secondary btn-lg mt-4">Go Back</a>
     {% else %}
-    <p class="h2">Oops! You don't have access to this page, please <span class="link-inline"><a
-                href="{% url 'account_login' %}">Login</a></span> to leave a review</p>
+    <p class="h2">Oops! You don't have access to delete this review, please <span class="link-inline"><a
+                href="{% url 'account_login' %}">Login</a></span> to the correct account</p>
     {% endif %}
     {% endif %}
 </div>
