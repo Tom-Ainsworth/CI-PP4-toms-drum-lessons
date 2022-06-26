@@ -135,11 +135,17 @@ In order to manage the workload for each sprint, I have divided the above opport
 
 - Current Students
   - As a current student, I want to have a profile, so that I can don't have to enter my details everytime I use the site.
-  - As a drum student, I want to request new songs to have the sheet music for
+  - As a drum student, I want to request new songs to have the sheet music to play along with.
   - As a satisfied customer, I want to submit a review on Tom's site to share my experience.
   - As a reading drummer, I want to download transcriptions of new songs to learn between lessons.
 
 These were the initial user stories I had, however once I began entering them on github as issues, I realised that they were much more tailored the actual business I do, rather than what the website can offer users. As such please see the [project board](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/projects/1) to see actual user stories and tasks carried out that can be directly related to the site features.
+
+Here is a list of user stories dropped as part of the agile process
+
+- As a visual learner, I want to see and hear what is being played, so that I can play along and watch what is happening.
+- As a visual learner, I want to see music written down, so that I can read and learn it at my own pace.
+- As a reading drummer, I want to download transcriptions of new songs to learn between lessons.
 
 ### Skeleton Plane
 
