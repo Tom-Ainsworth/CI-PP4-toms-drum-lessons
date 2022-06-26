@@ -32,15 +32,8 @@
             {% with request.resolver_match.url_name as url_name %}
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
-                {% comment %} <a class="nav-link{% if url_name == 'lessons' %}active{% endif %}" href="#">Lessons</a>
-                {% endcomment %}
                 <a class="nav-link {% if url_name == 'bookings' %}active{% endif %}"
                     href="{% url 'bookings' %}">Bookings</a>
-                {% comment %} <a class="nav-link {% if url_name == 'find-me' %}active{% endif %}" href="#">Find Me</a>
-                {% endcomment %}
-                {% comment %} <a
-                    class="nav-link {% if url_name == 'transcriptions' %}active{% endif %}">Transcriptions</a>
-                {% endcomment %}
                 <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}"
                     href="{% url 'reviews' %}">Reviews</a>
                 <a class="nav-link {% if url_name == 'faqs' %}active{% endif %}" href="{% url 'faqs' %}">FAQs</a>
@@ -103,6 +96,10 @@
                 </div>
             </div>
         </footer>
+
+
+        {% block scripts %}
+        {% endblock scripts %}
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -111,9 +108,6 @@
         </script>
         <script src=" {% static 'js/script.js' %}"></script>
         <script src="https://kit.fontawesome.com/f81afa6388.js" crossorigin="anonymous"></script>
-
-        {% block scripts %}
-        {% endblock scripts %}
     </body>
 
 </html>
