@@ -6,50 +6,8 @@
   - [Bugs and Fixes During the Development Process](#bugs-and-fixes-during-the-development-process)
 - [Wave Aim Accessibility checker:](#wave-aim-accessibility-checker)
 - [Lighthouse](#lighthouse)
-  - [Job Openings](#job-openings)
-    - [Logged out:](#logged-out)
-      - [_Desktop_:](#desktop)
-      - [_Mobile_:](#mobile)
-    - [Logged in:](#logged-in)
-      - [_Desktop_:](#desktop-1)
-      - [_Mobile_:](#mobile-1)
-  - [Full Job Spec](#full-job-spec)
-    - [With Notes Displayed:](#with-notes-displayed)
-      - [_Desktop_:](#desktop-2)
-      - [_Mobile_:](#mobile-2)
-    - [No Notes Displayed:](#no-notes-displayed)
-      - [_Desktop_:](#desktop-3)
-      - [_Mobile_:](#mobile-3)
-  - [Saved Jobs](#saved-jobs)
-    - [_Desktop_:](#desktop-4)
-    - [_Mobile_:](#mobile-4)
-  - [Tracking Instructions Page](#tracking-instructions-page)
-    - [_Desktop_:](#desktop-5)
-    - [_Mobile_:](#mobile-5)
-  - [Contact Page](#contact-page)
-    - [_Desktop_:](#desktop-6)
-    - [_Mobile_:](#mobile-6)
-  - [Insights Page](#insights-page)
-    - [_Desktop_:](#desktop-7)
-    - [_Mobile_:](#mobile-7)
-  - [Add Insights Page](#add-insights-page)
-    - [_Desktop_:](#desktop-8)
-    - [_Mobile_:](#mobile-8)
-  - [Edit Notes Page](#edit-notes-page)
-    - [_Desktop_:](#desktop-9)
-    - [_Mobile_:](#mobile-9)
-  - [Add Job Page](#add-job-page)
-    - [_Desktop_:](#desktop-10)
-    - [_Mobile_:](#mobile-10)
-  - [Sign Out Page](#sign-out-page)
-    - [_Desktop_:](#desktop-11)
-    - [_Mobile_:](#mobile-11)
-  - [Sign in Page](#sign-in-page)
-    - [_Desktop_:](#desktop-12)
-    - [_Mobile_:](#mobile-12)
-  - [Sign up Page](#sign-up-page)
-    - [_Desktop_:](#desktop-13)
-    - [_Mobile_:](#mobile-13)
+  - [Mobile](#mobile)
+  - [Desktop](#desktop)
 - [Validators](#validators)
   - [HTML:](#html)
   - [CSS:](#css)
@@ -110,4 +68,26 @@
 - Cause -
 - Solution -
 
+## Wave Aim Accessibility Checker
+
 ## Lighthouse
+
+### Mobile
+
+### Desktop
+
+## Validators
+
+### HTML
+
+No errors were found
+
+### CSS
+
+There were numerous errors caused by Bootstraps classes, but when pasting in my custom css, no errors or warnings were found were found.
+
+### JavaScript
+
+There is only 1 function in the script.js file, for closing messages after 3 seconds. I removed the alert variable as it wasn't necessary, and came up with a warning as the variable'bootstrap' wasn't defined. I retested the messages with this line removed and it still worked as expected.
+
+### Python
