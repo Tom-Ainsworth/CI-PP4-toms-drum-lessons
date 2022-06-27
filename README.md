@@ -476,6 +476,20 @@ Congratualations, you've deployed your site!
   - Used to style the markup
 - Javascript
   - Custom use minimal, to set a timeout on bootstrap messages.
+
+## Honourable Mentions
+
+- Spencer Barriball - My mentor throughout the project. Always able to answer any questions I have and is such a positive person to have around.
+- Ellie Pitkin - My partner who is always so understanding when I'm stuck in a rut or need to spend extra time to push through a problem. I couldn't ask for a more supportive person to have around me during this.
+- David Bowers for the amazing readme structure, seeing your finished write up made it incredibly easy for me to plan and excute this project, thanks a lot! That and the advice about implementing widget tweaks in forms was incredibly helpful.
+- Simen Daehlin for the amazing [VS Code tutorial](https://blog.dehlin.dev/vscode-checklist)
+- The Code Institute Slack community for having an answer to seemingly everything. The perks of going through course after it's been through a few iterations.
+- [Min Giorgis](https://instagram.com/giorgis_media?igshid=YmMyMTA2M2Y=) for taking some amazing photos for me!
+
+## Credits
+
+- [Balsamiq](https://balsamiq.com/) for creating the wireframes
+- VS Code for the text editor
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
   - Version 4.6.1, CSS framework for building a responsive front end, quickly. Comes with built-in javascript for features like the collapsable navbar, and accordion FAQs section.
 - [Cloudinary](https://cloudinary.com/)
@@ -485,17 +499,25 @@ Congratualations, you've deployed your site!
   - GitHub Projects used to organise user stories and tasks.
 - [VS Code Insiders](https://code.visualstudio.com/insiders/)
   - Text editor used to write the code and store the project locally.
-
-## Honourable Mentions
-
-- Spencer Barriball - My mentor throughout the project. Always able to answer any questions I have and is such a positive person to have around.
-- Ellie Pitkin - My partner who is always so understanding when I'm stuck in a rut or need to spend extra time to push through a problem. I couldn't ask for a more supportive person to have around me during this.
-- David Bowers for the amazing readme structure, seeing your finished write up made it incredibly easy for me to plan and excute this project, thanks a lot! That and the advice about implementing widget tweaks in forms was incredibly helpful.
-- Simen Daehlin for the amazing [VS Code tutorial](https://blog.dehlin.dev/vscode-checklist)
-- The Code Institute Slack community for having an answer to seemingly everything. The perks of going through course after it's been through a few iterations.
-
-## Credits
-
-- [Balsamiq](https://balsamiq.com/) for creating the wireframes
-- VS Code for the text editor
+- [Lucid Charts](https://lucid.app/)
+  - Used for the site flow and ERD diagrams.
+- [Coolers](https://coolors.co)
+  - for the site colour scheme.
+- [Google Fonts](https://fonts.google.com/)
+- Calendly
+  - for the booking page embedded calendar, it made life very easy for this feature!
+- Vimeo
+  - Home video hosting and embedding.
+- Code Institute I think therefore I blog walkthrough for the review cards for loop, messages and crispy forms implementation
+- Cripsy Forms for the create_review template.
+- TinyPNG for image file compression
 -
+- The PageTitleViewMixin was taken from [Forge Packages](https://www.forgepackages.com/guides/page-titles/)
+- General References
+  - Stack Overflow
+  - GeeksForGeeks
+  - Django docs
+  - Bootstrap Docs
+  - Code Institute LSE
+  - W3Schools
+  -
