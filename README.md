@@ -462,10 +462,6 @@ Congratualations, you've deployed your site!
 
 ## **Technologies used**
 
-## Honourable Mentions
-
-## Credits
-
 - Python
   - All packages used can be found in the [requirements.txt](requirements.txt) file
 - [Django](https://www.djangoproject.com/) - The Model View Template framework used to build the project and apps.
@@ -489,3 +485,17 @@ Congratualations, you've deployed your site!
   - GitHub Projects used to organise user stories and tasks.
 - [VS Code Insiders](https://code.visualstudio.com/insiders/)
   - Text editor used to write the code and store the project locally.
+
+## Honourable Mentions
+
+- Spencer Barriball - My mentor throughout the project. Always able to answer any questions I have and is such a positive person to have around.
+- Ellie Pitkin - My partner who is always so understanding when I'm stuck in a rut or need to spend extra time to push through a problem. I couldn't ask for a more supportive person to have around me during this.
+- David Bowers for the amazing readme structure, seeing your finished write up made it incredibly easy for me to plan and excute this project, thanks a lot! That and the advice about implementing widget tweaks in forms was incredibly helpful.
+- Simen Daehlin for the amazing [VS Code tutorial](https://blog.dehlin.dev/vscode-checklist)
+- The Code Institute Slack community for having an answer to seemingly everything. The perks of going through course after it's been through a few iterations.
+
+## Credits
+
+- [Balsamiq](https://balsamiq.com/) for creating the wireframes
+- VS Code for the text editor
+-

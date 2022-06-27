@@ -66,6 +66,12 @@ a {
   height: 80vh;
 }
 
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .wrapper lite-vimeo {
   position: absolute;
   width: 100%;
