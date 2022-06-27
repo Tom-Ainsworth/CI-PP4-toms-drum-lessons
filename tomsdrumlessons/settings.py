@@ -36,7 +36,6 @@ X_FRAME_OPTIONS = "SAMEORIGIN"
 ALLOWED_HOSTS = [
     "toms-drum-lessons.herokuapp.com",
     "127.0.0.1",
-    "techsini.com",
 ]
 
 
