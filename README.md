@@ -465,3 +465,27 @@ Congratualations, you've deployed your site!
 ## Honourable Mentions
 
 ## Credits
+
+- Python
+  - All packages used can be found in the [requirements.txt](requirements.txt) file
+- [Django](https://www.djangoproject.com/) - The Model View Template framework used to build the project and apps.
+  - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) was used for the login/out functionality and templates.
+- [Heroku](https://dashboard.heroku.com)
+  - for deployment and hosting
+- [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
+  - used for the database
+- HTML
+  - Used for the template structures
+- CSS
+  - Used to style the markup
+- Javascript
+  - Custom use minimal, to set a timeout on bootstrap messages.
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+  - Version 4.6.1, CSS framework for building a responsive front end, quickly. Comes with built-in javascript for features like the collapsable navbar, and accordion FAQs section.
+- [Cloudinary](https://cloudinary.com/)
+  - Used to store static files and media.
+- [GitHub](https://github.com/)
+  - Used for version control throughout the build process
+  - GitHub Projects used to organise user stories and tasks.
+- [VS Code Insiders](https://code.visualstudio.com/insiders/)
+  - Text editor used to write the code and store the project locally.
