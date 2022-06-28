@@ -1,7 +1,7 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOMContentLoaded');
+$(function () {
   setTimeout(function () {
     let messages = document.getElementById('msg');
-    messages.close();
-  }, 3000);
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+  }, 2500);
 });
