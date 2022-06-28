@@ -57,3 +57,9 @@ This sprint was the most research heavy of the project. It was definitely the ri
 #### Sprint Planning
 
 As mentioned above, the main goal is to complete the documentation. This will also include testing, as that is an essential requirement for the project.
+
+<img src="readme-content/agile/sprint-4.png" alt="Sprint 3 kanban board" width='1000px'>
+
+#### Sprint Reflection
+
+This one took a little longer than planned to get through the documentation. I'm very glad I was doing most of it as I went along as it made it a lot easier to recall any bugs or plan changes. During testing I spent a lot of time going over minor improvements. The advice on Lighthouse is very helpful for learning more about performance improvements, and I managed to raise scores to almost 100% across the board simply from following the steps. Small things like making sure images are correctly sizes, rather than trying to shrink an image that is 6000px wide mean the site can load quicker, and sublte SEO tips like making sure the description is set correctly, rather than it being boilerplate code are things that I would've missed had I not run the tests. Due to time constraints coming up, I had to cut this sprint a day short, and therefore didn't have time to add some of the 'should have' user stories like a transcriptions or lessons page. These would probably be the next features to add should I continue to work on this project.
