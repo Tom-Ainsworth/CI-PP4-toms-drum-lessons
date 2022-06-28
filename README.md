@@ -296,6 +296,8 @@ The footer features a more subtle grey text colour than the rest of the site to 
 - Internal booking system rather than Calendly link
 - Payment system so users can fully book a lesson
 - Review replies so users can see that I've responded to them
+- Contact form that sends email directly to my mainlbox
+- Transcriptions page for either admin alone, or with users to upload sheet music for others to use. Could also be a feature of the membership model.
 
 ## Testing
 
