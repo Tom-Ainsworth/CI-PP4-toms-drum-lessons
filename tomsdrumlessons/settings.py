@@ -61,9 +61,7 @@ INSTALLED_APPS = [
     "bookings",
     "faqs",
     "home",
-    "lessons",
     "reviews",
-    "transcriptions",
 ]
 
 SITE_ID = 1
