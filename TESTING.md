@@ -2,8 +2,7 @@
 
 [Return to README.md](README.md)
 
-- [Manual Testing](#manual-testing)
-  - [Bugs and Fixes During the Development Process](#bugs-and-fixes-during-the-development-process)
+- [Bugs and Fixes During the Development Process](#bugs-and-fixes-during-the-development-process)
 - [Wave Aim Accessibility checker:](#wave-aim-accessibility-checker)
 - [Lighthouse](#lighthouse)
   - [Mobile](#mobile)
@@ -26,11 +25,11 @@
   css
 - Issue - The deployed site on Heroku would not build properly as it couldn't install all dependencies
 - Cause - backports.zoneinfo had been set in the requirements.txt file which Heroku couldn't build wheels for, and was therefore not completeling the build.
-- Solution - [Fix](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/c0f9003a72c683865e5b214b964072c33f5f6f1a) Remove backports.zoneinfo library from requirements.txt as it wasn't necessary. Details on what this library does can be found [HERE](https://pypi.org/project/backports.zoneinfo/)
+- Solution - [Fix Commit](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/c0f9003a72c683865e5b214b964072c33f5f6f1a) Remove backports.zoneinfo library from requirements.txt as it wasn't necessary. Details on what this library does can be found [HERE](https://pypi.org/project/backports.zoneinfo/)
 
 - Issue - Development server would not load the local host
 - Cause - 'localhost' was set as an allowed host rather than 127.0.0.1.
-- Solution - [Fix Commit](c8b15cfddd30dbd47d483891d8db87a3cd76181b) Change the allowed host so that the dev environment can load properly.
+- Solution - [Fix Commit](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/c8b15cfddd30dbd47d483891d8db87a3cd76181b) Change the allowed host so that the dev environment can load properly.
 
 - Issue - All Questions in FAQs were showing/hiding whenever a single question was clicked on
 - Cause - Becuase questions were being populated by a for loop, the same classes were being added to every question, making them behave in the same way.
@@ -64,21 +63,27 @@
 - Cause - There were no checks in place to see whether the logged in user had access to individual entities. This allowed anyone with the specific update or delete url to manipulate the whole database.
 - Solution - [Fix Commit](https://github.com/Tom-Ainsworth/CI-PP4-toms-drum-lessons/commit/6dbb1a38e486d175ab6bc8fd66024382ccb5ce0c) Added an if statement to check whether the current user was the same as the user for a given review object. I made the same change for the update view as well in the next commit.
 
-- Issue -
-- Cause -
-- Solution -
-
 ## Wave Aim Accessibility Checker
 
 ## Lighthouse
 
+### Desktop
+
+![Lighthouse Desktop Score](readme-content/testing/testing-lighthouse-desktop.png)
+
+I spent some time altering how the home page video renders, as this was causing a lot of extra load time. The background images on the home page was also taking a while due to its size. I added some media queries to help with this by loading a size similar to the viewport, which drastically reduces the file size
+
 ### Mobile
 
-### Desktop
+![Lighthouse Desktop Score](readme-content/testing/testing-lighthouse-mobile.png)
+
+The scores mainly fluctuated between 80-95, mainly around 87/88, however the recurring issue was the unused CSS and JS caused by using the Bootstrap CDN, meaining the initial render was slower than it could have been. I'll consider looking at other alternatives like Tailwind for future projects should I use another framework, as it optimizes the file size based on used CSS.
 
 ## Validators
 
 ### HTML
+
+![HTML validation](readme-content/testing/testing-html.png)
 
 No errors were found
 
@@ -92,7 +97,7 @@ There is only 1 function in the script.js file, for closing messages after 3 sec
 
 ### Python
 
-![Pep8online Testing](readmecontent/images/testing-python.png)
+![Pep8online Testing](readme-content/testing/testing-python.png)
 
 [Pep8online.com](http://pep8online.com) was used to test all python files. All efforts were made to make all code pep8 compliant, with the exception of the settings.py file, which Django state in their docs is okay to ignore should it make the code ugglier or harder to read, which in these cases it does.
 

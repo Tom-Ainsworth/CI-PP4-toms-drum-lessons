@@ -4,9 +4,9 @@
 
 Although I am in the process of changing careers, I currently teach 1-1 drum lessons in person. One of the primary reasons I became interested in web development was to build my own website to advertise my business, and host lessons online. This website is aimed at people of all ages who are interested in taking drum lessons with me at my studio, and want to find out a bit more about me and what I can offer, before booking a lesson.
 
-![Multi Screen Image](#)
+![Multi Screen Image](readme-content/images/multi-device-mockup.png)
 
-[Live Site](https://toms-drum-lessons.herokuapp.com/)
+## [Live Site](https://toms-drum-lessons.herokuapp.com/)
 
 ## Contents
 
@@ -25,7 +25,7 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
     - [Typography](#typography)
 - [Agile Development Process](#agile-development-process)
 - [Current Features](#current-features)
-  - [Site Navigation](#site-navigation)
+  - [Navbar](#navbar)
     - [Logged Out](#logged-out)
     - [Logged In](#logged-in)
     - [Mobile Navigation](#mobile-navigation)
@@ -511,7 +511,6 @@ Congratualations, you've deployed your site!
 - Code Institute I think therefore I blog walkthrough for the review cards for loop, messages and crispy forms implementation
 - Cripsy Forms for the create_review template.
 - TinyPNG for image file compression
--
 - The PageTitleViewMixin was taken from [Forge Packages](https://www.forgepackages.com/guides/page-titles/)
 - General References
   - Stack Overflow
@@ -520,4 +519,3 @@ Congratualations, you've deployed your site!
   - Bootstrap Docs
   - Code Institute LSE
   - W3Schools
-  -
