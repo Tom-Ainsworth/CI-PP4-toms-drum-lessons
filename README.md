@@ -6,7 +6,7 @@ Although I am in the process of changing careers, I currently teach 1-1 drum les
 
 ![Multi Screen Image](readme-content/images/multi-device-mockup.png)
 
-## [Live Site](https://toms-drum-lessons.herokuapp.com/)
+## [Live Site](https://tomsdrumlessons.onrender.com)
 
 ## Contents
 
